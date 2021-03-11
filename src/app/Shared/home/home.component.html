@@ -3,7 +3,7 @@
 <button (click)="pesquisarAleatorio()" class="centralizado">random search</button>
 
 <div style="width: 100%;">
-
+  
   <div *ngFor="let pokemon of pokemons" class="card">
     <div class="card {{pokemon.types[0].type.name}}">  
       <img class="img-pokemon" src="{{pokemon.sprites.other['official-artwork'].front_default}}">   
