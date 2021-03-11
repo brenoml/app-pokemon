@@ -1,0 +1,26 @@
+
+
+<button (click)="pesquisarAleatorio()" class="centralizado">random search</button>
+
+<div style="width: 100%;">
+
+  <div *ngFor="let pokemon of pokemons" class="card">
+    <div class="card {{pokemon.types[0].type.name}}">  
+      <img class="img-pokemon" src="{{pokemon.sprites.other['official-artwork'].front_default}}">   
+      <br> 
+      <span>{{pokemon.name}}</span>
+      <div class="id-pokemon"><span>Nº #{{pokemon.id}}</span></div>
+      <div *ngFor="let types of pokemon.types" class="pokemon">
+        <span class="type background-color-{{types.type.name}}">{{types.type.name}}</span>
+      </div>
+      <div class="abilities">
+        <h2>abilities:</h2>    
+        <div *ngFor="let abilities of pokemon.abilities" class="pokemon">
+          <h3><b> - {{abilities.ability.name}} </b></h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button (click)="mostrarMais()" class="centralizado">Show More</button>
