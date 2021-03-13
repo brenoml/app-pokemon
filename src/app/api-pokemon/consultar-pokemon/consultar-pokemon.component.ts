@@ -5,7 +5,7 @@ import { Sprite }    from '../class/Sprite';
 import { Abilities }    from '../class/Abilities';
 import { Ability }    from '../class/Ability';
 
-@Component({
+@Component({  
   selector: 'consultar-pokemon',
   templateUrl: './consultar-pokemon.component.html',
   styleUrls: ['./consultar-pokemon.component.css']
